@@ -1,0 +1,32 @@
+footer {
+    background-color:  #495e57;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 2.0;
+}
+
+footcard {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.titlecard {
+    font-size: 22pt;
+    color: #EDEFEE;
+}
+
+.links {
+    font-size: 10pt;
+    background-color: #495e57;
+}
+
+.links a {
+    color: #EDEFEE;
+    text-decoration: none;
+    
+}
+a:hover {
+    color: #F4CE14;
+}

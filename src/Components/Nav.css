@@ -1,0 +1,54 @@
+.active {
+    background-color: #F4CE14;
+}
+
+nav { 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: ".nav nav.";
+    margin-top: 50px;
+    margin-left: 400px;
+    margin-right: 300px;
+    margin-bottom: 20px;
+}
+.LLimg {
+    margin-top: 12px;
+    margin-left: -115px;
+    height: 100px;
+    width: 250px;
+}
+nav a {
+    text-decoration: none;
+    height: 100px;
+    width: 250px;
+    margin: auto;
+}
+.ulNav {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto; 
+    text-decoration: none;
+    margin-left: 50px;
+    grid-column-gap: 25px;
+    margin-top: 30px;
+    
+}
+.liNav {
+   text-decoration: none;
+   list-style-type: none;
+   padding: 25px;
+}
+
+nav ul li a {
+   text-decoration: none;
+   color: #333333;
+   font-size: 14pt;
+   font-weight: bolder;
+   text-transform: uppercase;
+}
+
+nav ul li a:not(.active) :hover {
+    background-color: #f3db63;
+    border-radius: 16px;
+
+}

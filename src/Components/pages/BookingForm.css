@@ -1,0 +1,28 @@
+form{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px 700px 60px 720px;
+    padding: 40px 40px;
+    background-color: #F4CE14;
+    border-radius: 35px;
+    
+}
+label{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 22pt;
+    font-weight: bolder;
+}
+
+input{
+    border: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: 5px;
+    margin: 0px 5px 0px 10px;
+    border-radius: 8px;
+    outline: none;
+    height: 30px;
+}
