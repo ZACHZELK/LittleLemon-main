@@ -12,7 +12,7 @@ export const Hero = () => {
         focused on traditional<br></br>
         recipes served with a modern<br></br>
         twist.</p>
-      <button className='bhero'><Link to="/Reservations">Reserve a Table</Link></button>
+      <Link to="/Reservations">  <button className='bhero'>Reserve a Table</button></Link>
       <img className='RFhero' src="./icons_assets/restauranfood.jpg" alt='RestaurantFood'></img>
     </div>
   )

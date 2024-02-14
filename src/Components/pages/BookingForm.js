@@ -1,30 +1,29 @@
 import React, { useState } from 'react';
 import "./BookingForm.css";
+import { BookingTable } from './BookingTable';
+
 export const BookingForm = (props) => {
   const [partyname, setPartyname] = useState('');
   const [occasion, setOccasion] = useState('');
   const [guests, setGuests] = useState('1');
   const [date, setDate] = useState('');
-  const [times, setTime] = useState('');
+  const [availableTimes, setAvailableTimes] = useState('');
 
   //Errors State
   const [partynameErr, setPartynameErr] = useState({});
   const [occasionErr, setOccasionErr] = useState({});
 
 
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    props.SubmitForm(e);
     const isValid = formValidation();
-    console.log(partyname, occasion, guests, date, times);
+    console.log(partyname, occasion, guests, date, availableTimes);
     return isValid
 
   }
 
   const handlechange = (e) => {
     setDate(e);
-    props.dispatch(e);
   }
 
   const formValidation = () => {
@@ -97,16 +96,12 @@ export const BookingForm = (props) => {
         <br />
 
         <label>Times available:</label>
-        <select value={times} onChange={(e) => { setTime(e.target.value) }} >
-          <option value=''>Select Time</option>
-          {props.availableTimes.availableTimes.map(availableTimes => 
-            { return <option key={availableTimes}>{availableTimes}</option> })}
-        </select>
-
+      
+  
         <br />
 
         <button type='submit' onClick={handleSubmit} value={'Make Your Reservation'}>Make Your Reservation</button>
       </form>
     </div>
   )
-}
+};
